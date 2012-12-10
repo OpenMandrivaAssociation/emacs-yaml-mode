@@ -61,3 +61,14 @@ EOF
 %config(noreplace) /etc/emacs/site-start.d/%{name}.el
 %_datadir/*/site-lisp/*el*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1:0.0.4-2mdv2011.0
++ Revision: 618056
+- the mass rebuild of 2010.0 packages
+
+* Mon Jun 08 2009 Jerome Martin <jmartin@mandriva.org> 1:0.0.4-1mdv2010.0
++ Revision: 383955
+- create emacs-yaml-mode
+
