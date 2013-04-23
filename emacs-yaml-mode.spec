@@ -3,13 +3,12 @@
 Summary:	Major mode for editing YAML file
 Name:		emacs-%{rname}
 Version:	0.0.4
-Release:	%mkrel 2
+Release:	3
 Epoch:		1
 Source0:	%{rname}-%{version}.tar.gz
 URL:		http://github.com/yoshiki/yaml-mode/tree/master
 License:	GPLv3+
 Group:		Editors
-BuildRoot:	%_tmppath/%{name}-%{release}-buildroot
 Requires:	emacs >= 22.0
 BuildRequires:	emacs >= 22.0, texinfo
 BuildArch:    	noarch	
@@ -46,17 +45,7 @@ cat > %buildroot%_sysconfdir/emacs/site-start.d/%{name}.el << EOF
 
 EOF
 
-%post
-%_install_info %rname
-
-%postun
-%_remove_install_info %rname
-
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %config(noreplace) /etc/emacs/site-start.d/%{name}.el
 %_datadir/*/site-lisp/*el*
