@@ -3,7 +3,7 @@
 Summary:	Major mode for editing YAML file
 Name:		emacs-%{rname}
 Version:	0.0.4
-Release:	3
+Release:	4
 Epoch:		1
 Source0:	%{rname}-%{version}.tar.gz
 URL:		http://github.com/yoshiki/yaml-mode/tree/master
