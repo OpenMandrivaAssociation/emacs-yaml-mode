@@ -6,7 +6,7 @@ Version:	0.0.4
 Release:	4
 Epoch:		1
 Source0:	%{rname}-%{version}.tar.gz
-URL:		http://github.com/yoshiki/yaml-mode/tree/master
+URL:		https://github.com/yoshiki/yaml-mode/tree/master
 License:	GPLv3+
 Group:		Editors
 Requires:	emacs >= 22.0
